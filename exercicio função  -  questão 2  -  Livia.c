@@ -1,16 +1,25 @@
 #include <stdio.h>
-
-int arredonda(float x)
+int arredonda (float x);
+int main ()
 {
-
-    if (x > 0)
-    {
-
-        return (int)(x + 0.5);
-    }
+    float valor;
+    int valor_inteiro;
+    
+    scanf("%f", &valor);
+    printf("%f\n", &valor);
+    
+    
+    valor_inteiro = arredonda(valor);
+    
+    
+    printf("%d\n", valor_inteiro);
+    
+    
+}
+int arredonda (float valor){
+    if(valor > 0)
+    return (int) (valor + 0.5);
     else
-    {
-
-        return (int)(x - 0.5);
-    }
+    return (int) (valor - 0.5); 
+    
 }
