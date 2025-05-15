@@ -4,6 +4,9 @@ int main ()
 {
     float valor;
     int valor_inteiro;
+
+    printf("Digite um valor: ");
+    scanf("%f", &valor):
     
     scanf("%f", &valor);
     printf("%f\n", &valor);
